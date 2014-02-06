@@ -1,0 +1,118 @@
+Nas Configurator v.1.3.0 Beta  
+15th July 2011
+
+This software is a WEBUI enhancement for PCI-NAS01G and compatible NAS
+devices based on the Netronix NH230 board.
+It's free to use, modify and distribute.
+For more information look at http://tumbosporjapon.wordpress.com or at
+forum http://sohonas.freeforums.org/ .
+
+
+INSTALLATION INSTRUCTIONS 
+-------------------------
+
+If no major changes has been introduced, this README should work as 
+install guide regardless of version.
+
+The guide describes how to install the Nas Configurator on a PCI NAS01G.
+
+SUPPORTED DEVICES
+-----------------
+
+It has been tested:
+- PCI NAS-01G with Firmware V3.33(09-14-2007)
+- Encore ENNHD-1000 with Firmware Encore V.4.1
+
+It should run on the following models (not tested):
+!!! Please, backup your data before to test it !!!
+++ Allnet ALL6250, Vibe NS-349-U2, Eusso USS4500-I, Lindy 32455
+Even models with SATA (not tested):
+++ Netronix NH-231, Allnet ALL6260, Longshine LCS-8311, Fantec DB-C35
+Fujitsu-Siemens AMS150, Fujitsu-Siemens SBLAN2
+ 
+
+If you have one of these models, please give me your feedback. If 
+there's anyproblem for your platform, I could try to modify to run in
+your NAS.
+
+
+PREREQUISITES
+-------------
+
+* Do not requires any basic firmware. It should run in different brand
+firmwares.
+
+NAS Configurator installation package includes the basic required 
+software to run.  
+
+Nas configurator will install:
+* thttpd configured in Port 80
+* php v4.4.6
+* phpSysInfo v2.5.1 (system information)
+* downloady v1.5 (http file download)
+* httpd (included in PCI NAS01G Firm v.3.33) configured in Port 8081
+
+
+
+HOW TO INSTALL
+--------------
+Please, it is recommended to install the NAS Configurator on a clean NAS. 
+I recommend to format the hard disk (loosing all data!) and reset the
+Factory default configuration. 
+
+If it is installed without format the hard disk and you have done a
+backdoor file, please backup the backdoor file.
+
+1-  Download NAS-01G_NAS_Configurator_vX.X.X.zip file from RapidShare,
+find the latest release in:
+http://tumbosporjapon.wordpress.com/2011/02/24/nas-01g-%e2%80%93-nas-configurator/
+
+
+2- Unzip the NAS-01G_NAS_Configurator_vX.X.X.zip and copy to NAS
+    - in the share folder of your NAS: /mnt/Share 
+    or 
+    - with Windows file explorer, access to NAS typing \\NAS-01G\Share
+      or \\<your-NAS-IP>\Share on file explorer.
+
+3- Reboot NAS
+
+How to Video in:  http://www.youtube.com/watch?v=na6LzbgxHQM
+
+Package includes a "backdoor" file that contains all the commands to 
+install and run after reboot. 
+
+Backdoor file must be keept in the folder to run NAS Configurator.
+If backdoor file is deleted, NAS configurator will not run and factory
+NAS WebUI will be shown.
+
+START
+-----
+
+NAS Configurator will run after reboot the NAS while backdoor file is
+keept.
+
+
+UNINSTALL
+---------
+
+To Uninstall the Admin Menu Skin, just delete backdoor file or commands
+(located in /mnt/Share folder).
+
+And delete the Menu_Update folders, located in /mnt/Share and /mnt/www
+
+Then reboot the device.
+
+
+NOTES
+-----
+
+If NAS01G NTX_libra extension v3.33 is installed, DLNA service will be 
+uninstalled. It happens because Web Configurator uses the script included
+in 3.33 firmware to run and stop the services.
+
+If you want to use the DNLA, just install the Digital Media Server pack
+with 'package manager menu' and run and stop with 'switch services menu'.
+
+
+Written by Giffy on the 2nd of March 2011
+
