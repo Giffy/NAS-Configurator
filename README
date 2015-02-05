@@ -52,6 +52,10 @@ Nas configurator will install:
 * downloady v1.5 (http file download)
 * httpd (included in PCI NAS01G Firm v.3.33) configured in Port 8081
 
+Beta features:
+Configure NAS to transfer the downloaded files to a network device
+(compatible with SAMBA). 
+IP of network device set by default at 192.168.2.104 .
 
 
 HOW TO INSTALL
