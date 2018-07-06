@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#################################################################### Install Apache and NAS Configurator files
+
+[ -f /mnt/Share/NAS_configurator_v1.2.3b6.tgz ] && {
+	tar zxf /mnt/Share/NAS_configurator_v1.2.3b6.tgz -C /mnt/Share
+	rm /mnt/Share/NAS_configurator_v1.2.3b6.tgz
+	}
+
+
+#################################################################### Package Installer Script
+## Run install packages
+
+[ -f /mnt/install.sh ] && {
+	/bin/sh /mnt/install.sh
+	sleep 2
+	rm /mnt/install.sh
+	rm /mnt/ntx_libra.tgz
+	}
+
+#################################################################### Install NAS Configurator
+chmod 777 /mnt/Share/Menu_Update/install_generic_Package_Manager.sh
+/bin/sh /mnt/Share/Menu_Update/install_generic_Package_Manager.sh 
+
+#################################################################### Start up applications
+
+chmod 777 /mnt/Share/Menu_Update/Apps_Setup/startup_apps.sh
+/bin/sh /mnt/Share/Menu_Update/Apps_Setup/startup_apps.sh
+
+
+
+
+
+
+
+
