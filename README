@@ -67,16 +67,12 @@ Factory default configuration.
 If it is installed without format the hard disk and you have done a
 backdoor file, please backup the backdoor file.
 
-1-  Download NAS-01G_NAS_Configurator_vX.X.X.zip file from RapidShare,
-find the latest release in:
-http://tumbosporjapon.wordpress.com/2011/02/24/nas-01g-%e2%80%93-nas-configurator/
+1-  Download NAS-01G_NAS_Configurator from here, there are 2 files:
+     backdoor
+     NAS_configurator_v1.2.3b6.tgz
+     
 
-
-2- Unzip the NAS-01G_NAS_Configurator_vX.X.X.zip and copy to NAS
-    - in the share folder of your NAS: /mnt/Share 
-    or 
-    - with Windows file explorer, access to NAS typing \\NAS-01G\Share
-      or \\<your-NAS-IP>\Share on file explorer.
+2-  Copy the two files to your root folder in the NAS-01G
 
 3- Reboot NAS
 
