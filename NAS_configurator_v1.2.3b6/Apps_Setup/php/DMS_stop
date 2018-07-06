@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall DigitalMediaServer
+killall DigitalMediaServer
+rm /lib/libexpat.so.1

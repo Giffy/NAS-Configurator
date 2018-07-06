@@ -1,0 +1,103 @@
+# Admin Menu Skin EN v.1.2.1 is a WEBUI enhancement for PCI-NAS01G  
+# It's free to use, modify and distribute.
+# For more information look at http://tumbosporjapon.wordpress.com
+# or at http://sohonas.freeforums.org/
+
+
+INSTALLATION INSTRUCTIONS FOR ADMIN MENU SKIN ON PCI-NAS01G
+Written by Giffy on the 11th of December 2010
+Updated by Giffy on the 14th of December 2010
+
+Verified for PCI NAS01G with Firmware V3.33(09-14-2007).
+Downloable from official site:
+http://www.planex.net/driver/nas/NAS-01G/NAS-01G_FW_V3.33(09-14-2007)_Eng.zip
+
+If no major changes has been introduced, this README should work as 
+install guide regardless of version.
+
+The guide describes how to install the Admin Menu Skin v.1.2 on a PCI
+NAS01G. It has been tested in NAS01G but it should work on the following models
+with some changes (not tested):
+++ Allnet ALL6250, Encore ENNHD-1000, Vibe NS-349-U2, Eusso USS4500-I, Lindy 32455
+Even:
+++ Longshine LCS-8311, Fantec DB-C35 Giga LAN
+ 
+
+If you have one of these models, please contact me and I could try to adapt 
+to your NAS.
+
+
+NOT TESTED
+* Only tested on PCI NAS01G not in similar models.
+
+
+PREREQUISITES
+* Firmware 3.33 and ntx_libra.tgz
+* Apache (tested on v1.3.34) configured in Port 80
+* php (tested on 4.4.2)
+* Transmission 2.04
+
+
+INSTALL
+Unzip the NAS_01G-Admin_Menu_Skin_EN_v.1.2.zip in the share:
+/mnt/Share 
+
+With Windows you can access typing \\NAS-01G\Share or
+ \\<IP-of-NAS>\Share on file explorer.
+
+
+NAS_01G-Admin_Menu_Skin_EN_v.1.2.zip can be downloaded from RapidShare
+find the link in: http://tumbosporjapon.wordpress.com
+
+Backdoor file contains the commands to be included in Backdoor file.
+Please copy the content on your Backdoor file or if you don't have any 
+in your Share folder, you can keep as default.
+
+
+START
+Admin Menu Skin requires to reboot the NAS to install the WEBUI changes.
+
+
+UNINSTALL
+To Uninstall the Admin Menu Skin, just delete backdoor commands related to 
+Admin Menu Skin (if you want to keep your commands) or delete the backdoor
+file from share folder (it will delete your customized backdoor).
+
+Menu_Update folder will remain in /mnt/www/ that can be deleted
+by telnet.
+
+Reboot the device and the official WEBUI will load.
+
+
+REQUIREMENTS
+
+Admin Menu Skin has been designed with some considerations
+
+It is needed a HTTP server. I use Apache configured at port 80
+with /mnt/www as root path for webs. 
+Other HTTP servers have not been tested.
+
+The Services and Transmission web pages use PHP. I use PHP 4.4.2
+
+Transmission 2.04 can be configured through Admin Menu Skin, but 
+Transmission web files will be located in 
+/mnt/.local/share/transmission/web
+or /usr/share/transmission/web  in both 
+I use a link: ln -sf /mnt/.local/share /usr
+
+NOTES
+
+NAS_01G-Admin_Menu_Skin_EN_v.1.2.zip pack includes a file called dlna.tgz.
+
+dlna.tgz is the DMS (Digital Media Server) included in ntx_libra.tgz (Firm v3.33)
+because original dms file is replaced to allow start/stop the 
+transmission-daemon service or dlna.
+
+
+CHANGE LOG 14th Dec 2010:
+Updated the below php files. The problem was that IP was fix to 192.168.1.109, with this update the php files identify the NAS IP and Admin Port.
+ 
+transmissionform.php , transmission_stop.php , transmission_start.php , DLNA_stop.php , DLNA_start.php
+
+
+(eof)

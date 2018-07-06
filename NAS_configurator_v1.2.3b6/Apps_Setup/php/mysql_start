@@ -1,0 +1,4 @@
+#!/bin/sh
+
+killall mysqld
+/mnt/mysql/bin/safe_mysqld

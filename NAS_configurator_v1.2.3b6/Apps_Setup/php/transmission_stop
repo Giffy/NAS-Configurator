@@ -1,0 +1,4 @@
+#!/bin/sh
+
+killall transmission-daemon
+killall transmission-daemon

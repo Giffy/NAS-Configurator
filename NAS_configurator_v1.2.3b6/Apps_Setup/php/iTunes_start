@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -f /mnt/mt-daapd/songs.gdb
+chmod +x /mnt/mt-daapd/mt-daapd
+ln -s /mnt/mt-daapd/libiconv.so.2.3.0 /lib/libiconv.so.2
+ln -s /mnt/mt-daapd/libgdbm.so.3.0.0 /lib/libgdbm.so.3
+ln -s /mnt/mt-daapd/libid3tag.so.0.3.0 /lib/libid3tag.so.0
+/mnt/mt-daapd/mt-daapd -c /mnt/mt-daapd/mt-daapd.conf

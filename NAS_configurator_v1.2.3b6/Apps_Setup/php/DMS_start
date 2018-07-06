@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm /mnt/.dms.* 
+cp /mnt/libexpat.so.1 /lib/libexpat.so.1   
+chmod +x /mnt/DigitalMediaServer
+/mnt/DigitalMediaServer -f /etc/xml/dms.xml -r /mnt > chlog&

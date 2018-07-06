@@ -1,0 +1,6 @@
+#!/bin/sh
+
+killall mlnet
+rm -f /mnt/mldonkey/*.tmp
+rm -f /mnt/mldonkey/*.pid
+cp /mnt/mldonkey/old_config/downloads.ini /mnt/mldonkey

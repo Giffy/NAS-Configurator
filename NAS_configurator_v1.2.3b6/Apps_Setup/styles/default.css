@@ -1,0 +1,36 @@
+A:link {
+	COLOR: #ccffff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #eeffff; TEXT-DECORATION: none
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+TR {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+P {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+.style1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ffffff; LINE-HEIGHT: 32px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+.style2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #f0f8ff; LINE-HEIGHT: 18px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+.style9 {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #333399; LINE-HEIGHT: 32px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+.style6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #2222FF; LINE-HEIGHT: 32px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+.style5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #f0f8ff; LINE-HEIGHT: 32px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}
+.style4 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY:Arial, Helvetica, sans-serif;
+}

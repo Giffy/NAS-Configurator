@@ -1,0 +1,8 @@
+#!/bin/sh
+
+killall mlnet
+rm -f /mnt/.mldonkey/*.tmp
+rm -f /mnt/.mldonkey/*.pid
+export MLDONKEY_CHROOT=/mnt/.mldonkey
+cp /mnt/mldonkey/old_config/downloads.ini /mnt/mldonkey
+MLDONKEY_CHROOT=/mnt/.mldonkey mlnet -run_as_useruid 32767 > chlog&

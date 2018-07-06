@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export MEDIATOMB_DATADIR='/mnt/.mediatomb'
+export MEDIATOMB_MAGIC_FILE='/mnt/.mediatomb/magic/magic'
+mediatomb
